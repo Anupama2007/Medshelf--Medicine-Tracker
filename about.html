@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Medicine Tracker</title>
+  <style>
+     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px 25px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2b7a78;
+      border-bottom: 2px solid #def2f1;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #3aafa9;
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .color-guide li {
+      display: flex;
+      align-items: center;
+    }
+
+    .color-guide span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .yellow {
+      background-color: #fff3cd;
+    }
+
+    .pink {
+      background-color: #f8d7da;
+    }
+
+    .red {
+      background-color: #f5c6cb;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px 20px;
+        margin: 20px 10px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p,
+      ul li {
+        font-size: 0.95rem;
+      }
+
+      .color-guide span {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About Medicine Tracker</h1>
+    <p><strong>Medicine Tracker</strong> is a simple yet powerful web application designed to help users manage their medicine inventory efficiently. Whether you're keeping track of personal medications or managing a household supply, this tool helps you stay organized and informed.</p>
+
+    <h2> Key Features</h2>
+    <ul>
+      <li><strong>Add New Medicines:</strong> Quickly input medicine name, quantity, and expiry date.</li>
+      <li><strong>Edit & Delete:</strong> Easily update or remove medicine details anytime.</li>
+      <li><strong>Search Functionality:</strong> Instantly find specific medicines and view their status.</li>
+    </ul>
+
+    <h2>Color-Coded Search Results</h2>
+    <ul class="color-guide">
+      <li><span class="yellow"></span> <strong>Yellow:</strong> Medicine is in stock and not expired.</li>
+      <li><span class="pink"></span> <strong>Pink:</strong> Medicine is out of stock, expired, or both.</li>
+      <li><span class="red"></span> <strong>Red:</strong> Medicine is expired but still in stock.</li>
+       <li><span class="green"></span> <strong>Red:</strong> Medicine is available and there is much time to expire.</li>
+    </ul>
+
+    <h2> Why Use Medicine Tracker?</h2>
+    <p>Manual tracking can lead to taking expired medicines or running out unexpectedly. Medicine Tracker provides a smart and intuitive way to stay informed, avoid wastage, and promote better health management.</p>
+  </div>
+</body>
+</html>
+

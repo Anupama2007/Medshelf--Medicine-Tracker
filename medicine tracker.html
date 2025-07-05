@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedShelf - Home</title>
+    <style>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(233,25,158,1) 0%, rgba(231,7,250,1) 100%);
+    padding: 15px 20px;
+    color: white;
+}
+.navbar h1 {
+    flex: 1;
+    font-size: 1.5em;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar ul li {
+    margin: 5px 10px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(244, 247, 248);
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: radial-gradient(circle, rgba(245,238,20,1) 0%, rgba(132,233,14,1) 100%);
+    color: rgb(233, 11, 92);
+}
+.hero h2 {
+    font-size: 2.5em;
+}
+.hero p {
+    font-size: 1.2em;
+}
+.hero button {
+    background: rgb(253, 8, 155);
+    color: #f3f2f4;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+.hero button:hover {
+    background: #5109f9;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.how-it-works ol {
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.testimonials p {
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #9ff707;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+    width: 100%;
+    padding: 20px;
+}
+footer li {
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* -------------------------
+   Responsive Media Queries
+---------------------------- */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero button {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .how-it-works ol {
+        font-size: 1em;
+        text-align: left;
+        width: 100%;
+    }
+
+    .features ul {
+        font-size: 1em;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.7em;
+    }
+
+    .hero p {
+        font-size: 0.95em;
+    }
+
+    .features ul,
+    .how-it-works ol {
+        font-size: 0.95em;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .navbar h1 {
+        font-size: 1.3em;
+    }
+
+    footer a {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>MedShelf</h1>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+        </ul>
+    </nav>
+    
+    <header class="hero">
+        <h2>Welcome to MedShelf</h2>
+        <p>Your Smart Medicine Inventory Manager</p>
+        <button onclick="location.href='inventory.html'">Start Tracking Now</button>
+    </header>
+    
+    <section class="about">
+        <h2>About MedShelf</h2>
+        <p>MedShelf helps you manage your medicine inventory efficiently, ensuring you never miss an expiry date or run out of stock.</p>
+    </section>
+    
+    <section class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Easy Medicine Entry</li>
+            <li>Expiry Date Tracking</li>
+            <li>Smart Alerts & Notifications</li>
+            <li>Visual Dashboard for Medicine Status</li>
+        </ul>
+    </section>
+    
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Add a Medicine</li>
+            <li>Track Expiry & Quantity</li>
+            <li>Restock or Remove Expired Items</li>
+        </ol>
+    </section>
+    
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <p>"MedShelf has made tracking my medicines so much easier! Highly recommend." – Jane Doe</p>
+        <p>"I never worry about expired medicines anymore. Great tool!" – John Smith</p>
+    </section>
+    
+    <footer>
+        <li><a href="Faq.html">FAQ</a></li>
+         <li><a href="Feedback.html">Feedback</a></li>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Start Tracking Button Click Event
+    const startTrackingBtn = document.querySelector(".hero button");
+    startTrackingBtn.addEventListener("click", function () {
+        window.location.href = "inventory.html";
+    });
+
+    // Dynamic Testimonials (Optional Feature)
+    const testimonials = [
+        "MedShelf has made tracking my medicines so much easier! Highly recommend. – Jane Doe",
+        "I never worry about expired medicines anymore. Great tool! – John Smith",
+        "Helps me keep my family's medicines organized effortlessly. – Emily Davis"
+    ];
+    
+    let testimonialIndex = 0;
+    const testimonialElement = document.querySelector(".testimonials p");
+    
+    function updateTestimonial() {
+        testimonialElement.textContent = testimonials[testimonialIndex];
+        testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+    }
+    
+    setInterval(updateTestimonial, 5000); // Change testimonial every 5 seconds
+});
+    </script>
+</body>
+</html>
