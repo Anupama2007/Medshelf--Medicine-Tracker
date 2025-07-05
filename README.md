@@ -10,8 +10,11 @@ Search Functionality: Instantly find specific medicines and view their status.
 Color-Coded Search Results
 
 Yellow:Medicine is in stock and not expired.
+
 Pink:Medicine is out of stock, expired, or both.
+
 Red:Medicine is expired but still in stock.
+
 Red:Medicine is available and there is much time to expire.
 
 Why Use Medicine Tracker?
