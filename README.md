@@ -3,8 +3,11 @@
 Medicine Tracker is a simple yet powerful web application designed to help users manage their medicine inventory efficiently. Whether you're keeping track of personal medications or managing a household supply, this tool helps you stay organized and informed.
 
 Key Features
+
 Add New Medicines: Quickly input medicine name, quantity, and expiry date.
+
 Edit & Delete: Easily update or remove medicine details anytime.
+
 Search Functionality: Instantly find specific medicines and view their status.
 
 Color-Coded Search Results
